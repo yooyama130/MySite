@@ -9,6 +9,7 @@ li{
   list-style: none;
 }
 
+/* ヘッダー */
 header{
   width: 100%;
   height: 70px;
@@ -31,4 +32,133 @@ header{
   font-size: 16px;
   line-height: 70px;
   padding: 0 30px;
+}
+
+
+/*--------------------- メインビジュアル ------------------------------*/
+.main-visual{
+  background-image: url("img/mv.png");
+  background-size: 100%;
+  height: 650px;
+}
+
+.main-visual-texts{
+  padding-top : 200px;
+  padding-bottom : 200px;
+}
+
+.main-text{
+  color: #FAFAFA;
+  font-size: 64px;
+  text-align: center;
+  padding-bottom: 10px
+}
+
+.sub-text{
+  color: #FAFAFA;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*--------------------- Portfolo ------------------------------*/
+.portfolio{
+  background-color: #ECEFF1;
+  width: 100%;
+}
+
+.portfolio-contents{
+  padding: 90px 0;
+  margin:  0 auto;
+  width: 920px;
+}
+
+.portfolio-heading{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+/*以下で線を表示*/
+.portfolio-heading::after{
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+.portfolio-texts{
+  padding: 30px 0;
+  font-size: 16px;
+  color:#000000;
+  text-align: center;
+}
+
+.portfolio-images{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.production{
+  width: 300px;
+  height: 250px;
+}
+
+.portfolio-images :nth-child(2){
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.portfolio-images :nth-child(5){
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.portfolio-images :nth-child(1){
+  margin-bottom: 10px;
+}
+
+.portfolio-images :nth-child(2){
+  margin-bottom: 10px;
+}
+
+.portfolio-images :nth-child(3){
+  margin-bottom: 10px;
+}
+
+.bg-1{
+  background-position: center;
+  background-image: url("img/sketch.jpg");
+  background-size: cover;
+}
+
+.bg-2{
+  background-position: center;
+  background-image: url("img/websuku.png");
+  background-size: cover;
+}
+
+.bg-3{
+  background-position: center;
+  background-image: url("img/write.jpg");
+  background-size: cover;
+}
+
+.bg-4{
+  background-position: center;
+  background-image: url("img/webcamp.png");
+  background-size: cover;
+}
+
+.bg-5{
+  background-position: center;
+  background-image: url("img/talk.jpg");
+  background-size: cover;
+}
+
+.bg-6{
+  background-position: center;
+  background-image: url("img/webcamp-mother.png");
+  background-size: cover;
 }

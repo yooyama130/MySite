@@ -215,3 +215,50 @@ header{
   color: #000000;
   text-align: left;
 }
+
+/*--------------------- Profile ------------------------------*/
+.profile{
+  background-color: #ECEFF1;
+  width: 100%;
+}
+
+.profile-contents{
+  padding: 90px 0;
+  margin:  0 auto;
+  width: 1024px;
+}
+
+.my-profile{
+  display: flex;
+}
+
+.profile-icon{
+  width: 512px;
+  text-align: center;
+}
+
+.profile-icon img {
+    border-radius: 50%;
+    width:  250px;
+    height: 250px;
+}
+
+.profile-self_introduction{
+  width: 512px;
+}
+
+.profile-self_introduction h4{
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.profile-self_introduction h4:not(:first-child){
+  margin-top: 20px;
+}
+
+.profile-self_introduction p{
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 20px;
+}

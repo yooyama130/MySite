@@ -228,6 +228,13 @@ header{
   width: 1024px;
 }
 
+.profile-texts{
+  padding: 30px 0;
+  font-size: 16px;
+  color:#000000;
+  text-align: center;
+}
+
 .my-profile{
   display: flex;
 }
@@ -261,4 +268,87 @@ header{
   color: #000000;
   text-align: left;
   margin-bottom: 20px;
+}
+
+/*--------------------- Contact ------------------------------*/
+.contact{
+  width: 100%;
+}
+
+.contact-contents{
+  padding: 90px 0;
+  margin:  0 auto;
+  width: 800px;
+}
+
+.contact-texts{
+  padding: 30px 0;
+  font-size: 16px;
+  color:#000000;
+  text-align: center;
+}
+
+.my-contacts{
+  display: flex;
+}
+
+.left-content{
+  width: 400px;
+  height: auto;
+}
+
+.right-content{
+  width: 400px;
+  height: auto;
+}
+
+.email_and_tel{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.email_and_tel h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.email_and_tel h4:not(:first-child){
+  margin-top: 20px;
+}
+
+.link-text{
+  color: #212121;
+}
+
+.SNSs{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.SNSs h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.SNSs i{
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.SNSs i:last-child{
+  margin-right: 0;
+}
+
+/*--------------------- ヘッダー ------------------------------*/
+footer{
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+  text-align: center;
+}
+
+footer p{
+  color: #FAFAFA;
+  font-size: 16px;
+  line-height: 60px;
 }

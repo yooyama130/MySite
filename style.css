@@ -26,6 +26,7 @@ li{
 }
 
 
+
 /*--------------------- ヘッダー ------------------------------*/
 header{
   width: 100%;
@@ -34,13 +35,18 @@ header{
 }
 
 .header-logo{
-  height: 100%;
+  height: 70px;
 }
 
 .header-nav{
   float: right;
   color: #FAFAFA;
   font-size: 16px;
+}
+
+/* チェックボックスは非表示に */
+.drawer-hidden {
+  display: none;
 }
 
 .header-nav li{
@@ -339,7 +345,7 @@ header{
   margin-right: 0;
 }
 
-/*--------------------- ヘッダー ------------------------------*/
+/*--------------------- フッター ------------------------------*/
 footer{
   width: 100%;
   height: 60px;
@@ -351,4 +357,250 @@ footer p{
   color: #FAFAFA;
   font-size: 16px;
   line-height: 60px;
+}
+
+
+
+/*===============================メディアクエリ =============================*/
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+  body{
+    width: 100%;
+  }
+
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  /*--------------------- ヘッダー ------------------------------*/
+  header{
+    width: 100%;
+    height: 50px;
+    background-color: #EC715F;
+  }
+
+  .header-logo{
+    height: 50px;
+  }
+
+  .header-nav{
+    float: right;
+    color: #FAFAFA;
+    font-size: 16px;
+  }
+
+  /* ハンバーガーメニュー */
+  /* チェックボックスは非表示に */
+  .drawer-hidden {
+    display: none;
+  }
+
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+  }
+
+  /* ハンバーガーメニューのアイコン */
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  /* 三本線のうち一番上の棒の位置調整 */
+  .drawer-open span:before {
+    bottom: 8px;
+  }
+
+  /* 三本線のうち一番下の棒の位置調整 */
+  .drawer-open span:after {
+    top: 8px;
+  }
+
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* メニューのデザイン*/
+  .drawer-content {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #EC715F;
+    transition: .5s;
+  }
+
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+  /* ハンバーガーメニュー用に配置をいじる */
+  .header-nav li{
+    float: left;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 70px;
+    padding: 0 30px;
+  }
+  /* ハンバーガーメニュー 　ここまで*/
+
+
+  /*--------------------- メインビジュアル ------------------------------*/
+  .main-visual{
+    background-image: url("img/mv.png");
+    background-size: 100%;
+    height: 650px;
+  }
+
+  .main-visual-texts{
+    padding-top : 200px;
+    padding-bottom : 200px;
+  }
+
+  .main-text{
+    color: #FAFAFA;
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 10px
+  }
+
+  .sub-text{
+    color: #FAFAFA;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*--------------------- Portfolo ------------------------------*/
+  .portfolio{
+    background-color: #ECEFF1;
+    width: 100%;
+  }
+
+  .portfolio-contents{
+    margin:  0 auto;
+    width: 90%;
+  }
+
+  /*--------------------- Feature ------------------------------*/
+  .feature{
+    background-color: #FFFFFF;
+    width: 100%;
+  }
+
+  .feature-contents{
+    width: 100%;
+  }
+
+  .feature-texts{
+    padding: 30px 0;
+    font-size: 16px;
+    color:#000000;
+    text-align: center;
+  }
+
+  .feature-strengths{
+    display: block;
+  }
+
+  .strength{
+    width: 320px;
+    height: auto;
+    margin-right : 10px;
+  }
+
+  .strength :last-child{
+    margin-right: 0;
+  }
+
+  .strength i{
+    display: block;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .strength h4{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .strength p{
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+  }
+
+
+
+  /*--------------------- Profile ------------------------------*/
+  .profile{
+    width: 100%;
+  }
+
+  .profile-contents{
+    margin:  0 auto;
+    width: 90%;
+  }
+
+  .my-profile{
+    display:block;
+  }
+
+  .profile-icon{
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-self_introduction{
+    width: 100%;
+  }
+
+  /*--------------------- Contact ------------------------------*/
+  .contact{
+    width: 100%;
+  }
+
+  .contact-contents{
+    margin:  0 auto;
+    width: 90%;
+  }
+
+
+  /*--------------------- フッダー ------------------------------*/
+  footer{
+    width: 100%;
+  }
 }

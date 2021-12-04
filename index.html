@@ -12,15 +12,27 @@
   <body>
     <!-- ヘッダー -->
     <header>
-      <img class = "header-logo" src="img/logo.png">
-      <nav class = "header-nav">
-        <ul>
-          <li>Portfolio</li>
-          <li>Feature</li>
-          <li>Profile</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+      <div class="container">
+        <img class = "header-logo" src="img/logo.png">
+        <nav class = "header-nav">
+          <!-- ハンバーガーメニュー部分 -->
+          <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-check" class="drawer-open"><span></span></label>
+            <!-- メニュー -->
+            <nav class="drawer-content">
+              <ul class="drawer-list">
+                  <li>Portfolio</li>
+                  <li>Feature</li>
+                  <li>Profile</li>
+                  <li>Contact</li>
+              </ul><!-- /.drawer-list -->
+            </nav>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- メインビジュアル -->
@@ -118,7 +130,7 @@
                 the more obscure Latin words, consectetur
                </p>
                <h4>MySkills</h4>
-               <p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+               <p>HTML/CSS, JavaScript, JQuery, PhotoShop</p>
             </div>
           </div>
         </section>

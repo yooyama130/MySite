@@ -61,7 +61,8 @@ header{
 /*--------------------- メインビジュアル ------------------------------*/
 .main-visual{
   background-image: url("img/mv.png");
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   height: 650px;
 }
 
@@ -452,7 +453,7 @@ footer p{
   /* メニューのデザイン*/
   .drawer-content {
     width: 100%;
-    height: 100px;
+    height: 180px;
     position: fixed;
     top: 0;
     left: 100%;/* メニューを画面の外に飛ばす */
@@ -472,15 +473,16 @@ footer p{
     color: #FAFAFA;
     font-size: 16px;
     line-height: 70px;
-    padding: 0 30px;
+    padding: 5px 40px;
   }
   /* ハンバーガーメニュー 　ここまで*/
 
 
   /*--------------------- メインビジュアル ------------------------------*/
   .main-visual{
-    background-image: url("img/mv.png");
-    background-size: 100%;
+    background-image: url("img/code.png");
+    background-position: center;
+    background-size: cover;
     height: 650px;
   }
 
@@ -491,14 +493,14 @@ footer p{
 
   .main-text{
     color: #FAFAFA;
-    font-size: 64px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 10px
   }
 
   .sub-text{
     color: #FAFAFA;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -510,8 +512,66 @@ footer p{
 
   .portfolio-contents{
     margin:  0 auto;
-    width: 90%;
+    width: 100%;
   }
+
+  .portfolio-texts{
+    padding: 30px 0;
+    font-size: 16px;
+    color:#000000;
+    text-align: center;
+  }
+
+  .portfolio-images{
+    display: block;
+  }
+
+  .production{
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .portfolio-images :nth-child(2){
+    margin: 0 auto;
+  }
+
+  .portfolio-images :nth-child(2){
+    margin-bottom: 10px;
+  }
+
+  .portfolio-images :nth-child(4){
+    margin-bottom: 10px;
+  }
+
+  .portfolio-images :nth-child(6){
+    margin-bottom: 10px;
+  }
+
+  .bg-1{
+    display: none;
+    background-position: center;
+    background-image: url("img/sketch.jpg");
+    background-size: cover;
+  }
+
+
+  .bg-3{
+    display: none;
+    background-position: center;
+    background-image: url("img/write.jpg");
+    background-size: cover;
+  }
+
+
+  .bg-5{
+    display: none;
+    background-position: center;
+    background-image: url("img/talk.jpg");
+    background-size: cover;
+  }
+
+
 
   /*--------------------- Feature ------------------------------*/
   .feature{
@@ -532,16 +592,19 @@ footer p{
 
   .feature-strengths{
     display: block;
+    margin: 0 auto;
   }
 
   .strength{
-    width: 320px;
+    width: 100%;
     height: auto;
-    margin-right : 10px;
+    margin-right : 0;
+    margin-bottom: 10px;
   }
 
   .strength :last-child{
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   .strength i{
@@ -572,7 +635,7 @@ footer p{
 
   .profile-contents{
     margin:  0 auto;
-    width: 90%;
+    width: 100%;
   }
 
   .my-profile{
@@ -595,7 +658,70 @@ footer p{
 
   .contact-contents{
     margin:  0 auto;
-    width: 90%;
+    width: 100%;
+  }
+
+  .contact-texts{
+    padding: 30px 0;
+    font-size: 16px;
+    color:#000000;
+    text-align: center;
+  }
+
+  .my-contacts{
+    display: block;
+  }
+
+  .left-content{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .right-content{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .email_and_tel{
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .email_and_tel h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .email_and_tel h4:not(:first-child){
+    margin-top: 20px;
+  }
+
+  .link-text{
+    color: #212121;
+  }
+
+  .SNSs{
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .SNSs h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .SNSs i{
+    font-size: 50px;
+    margin-right: 20px;
+  }
+
+  .SNSs i:last-child{
+    margin-right: 0;
   }
 
 
